@@ -4,12 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="4dp"
+    android:background="@color/black"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:background="@color/black"
+        >
 
         <TextView
             android:id="@+id/tvTitulo"
@@ -19,6 +23,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
             android:layout_marginTop="8dp"/>
 
         <ImageView
@@ -35,11 +40,12 @@
             android:id="@+id/tvResenia"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Reseña"
-            app:layout_constraintTop_toBottomOf="@id/ivFoto"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivFoto" />
 
         <Button
             android:id="@+id/btDetalles"

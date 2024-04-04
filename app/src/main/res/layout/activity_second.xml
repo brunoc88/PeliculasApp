@@ -5,77 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ui.SecondActivity">
+
 
     <TextView
         android:id="@+id/tvDetalleTitulo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="#F40303"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <ImageView
         android:id="@+id/ivFotoPelicula"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:maxWidth="200dp"
-        android:maxHeight="200dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/tvDetalleDirector"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetalleTitulo"
+        app:layout_constraintVertical_bias="0.128"
         tools:srcCompat="@tools:sample/avatars" />
-
 
     <TextView
         android:id="@+id/tvDetalleDirector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivFotoPelicula"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <TextView
         android:id="@+id/tvListaActores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetalleDirector"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.079" />
 
     <TextView
-        android:id="@+id/datosPeli"
+        android:id="@+id/ivDatosPeli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvListaActores"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <Button
-        android:id="@+id/volver"
+        android:id="@+id/btVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datosPeli" />
+        app:layout_constraintTop_toBottomOf="@+id/ivDatosPeli" />
 </androidx.constraintlayout.widget.ConstraintLayout>

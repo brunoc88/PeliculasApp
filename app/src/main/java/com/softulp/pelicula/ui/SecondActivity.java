@@ -37,24 +37,24 @@ public class SecondActivity extends AppCompatActivity {
         ImageView ivFoto = findViewById(R.id.ivFotoPelicula);
         TextView tvDirector = findViewById(R.id.tvDetalleDirector);
         TextView tvActores = findViewById(R.id.tvListaActores);
-        TextView tvResenia = findViewById(R.id.datosPeli);
+        TextView tvResenia = findViewById(R.id.ivDatosPeli);
 
         tvTitulo.setText(titulo);
-        //ivFoto.setImageResource(foto);
-        tvDirector.setText(director);
+        ivFoto.setImageResource(foto);
+        tvDirector.setText("Director: " + "" +director);
 
 
 
 
         StringBuilder actoresStr = new StringBuilder();
         for (String actor : actores) {
-            actoresStr.append(actor).append("\n");
+            actoresStr.append("Actor: "+ "" +actor).append("\n");
         }
         ((TextView) findViewById(R.id.tvListaActores)).setText(actoresStr.toString());
 
         tvResenia.setText(descripcion);
 
-        Button volver = findViewById(R.id.volver);
+        Button volver = findViewById(R.id.btVolver);
 
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
